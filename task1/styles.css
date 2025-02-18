@@ -1,0 +1,731 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #1bd762;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact {
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("phtoes/solar-panels-meadow 3.png"); padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    color: white;
+    max-width: 50%;
+}
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+        color : white;
+        margin-bottom: 1.5rem;
+    }
+
+.btn {
+    background-color: #1bd762;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn-secondary {
+    background-color: #eabc0b;
+}
+
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.container {
+    display: flex;
+    gap: 2rem; /* Space between left and right content */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Left Content: Text and Features Grid */
+.left-content {
+    flex: 1; /* Take up remaining space */
+}
+
+    .left-content h2 {
+        text-align: left; /* Align text to the left */
+        margin-bottom: 1rem;
+        color: #023047;
+    }
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1.5rem;
+}
+
+.feature {
+    background-color: #edf6f9;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 1.5rem); /* 3 columns by default */
+    text-align: left; /* Align text to the left */
+}
+
+    .feature h3 {
+        font-size: 1.5rem;
+        color: #006d77;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+        color: #555;
+    }
+
+/* Right Content: Image and Top Container */
+.right-content {
+    flex: 1; /* Take up remaining space */
+    position: relative; /* For positioning the top container */
+}
+
+    .right-content img {
+        max-width: 100%;
+        border-radius: 10px; /* Optional: Add rounded corners */
+    }
+
+/* Top Container on Image */
+.top-container {
+    position: absolute; /* Position on top of the image */
+    top: 300px; /* Adjust as needed */
+    right: 50px;
+    left: -30px; /* Adjust as needed */
+    background-color: #eabc0b; /* Semi-transparent background */
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 40%; /* Prevent container from being too wide */
+}
+
+    .top-container h3 {
+        font-size: 1.5rem;
+        color: #023047;
+        margin-bottom: 0.5rem;
+    }
+
+    .top-container p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    .right-content {
+        order: -1; /* Move image to the top on smaller screens */
+    }
+
+    .top-container {
+        position: static; /* Reset position for smaller screens */
+        margin-bottom: 1rem; /* Space between top container and image */
+    }
+
+    .feature {
+        flex: 1 1 calc(50% - 1.5rem); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 100%; /* 1 column on mobile */
+    }
+}
+
+/*power */
+/* Basic styling for the section */
+.power {
+    background-image: url("phtoes/powerPhoto.png");
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    text-align:left; 
+    
+    padding: 50px;
+    font-family: Arial, sans-serif; 
+}
+
+
+
+
+
+
+    /* Styling for the heading */
+    .power h2 {
+        color: white; /* Dark text color */
+        margin-bottom: 10px; /* Space below the heading */
+        margin-left: 8%;
+       
+    }
+
+    /* Styling for the paragraph */
+    .power p {
+        text-align : left;
+        color: white; /* Medium gray text color */
+        margin-bottom: 20px; /* Space below the paragraph */
+        margin-left: 8%;
+    }
+
+
+.callUs {
+    background-color: #eabc0b;
+    color: #080808; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border-radius: 25px; /* Oval shape (half of the height) */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    margin-left: 8%;
+}
+
+    /* Hover effect for the button */
+    .callUs:hover {
+        background-color: #d58007; /* Darker blue on hover */
+    }
+
+/* Solar Kits Section */
+.solar-kits {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+    .solar-kits h1 , p {
+       
+        padding : 5px;
+        text-align: center;
+
+        margin-bottom: 2rem;
+        color: #023047;
+    }
+
+.kits-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 1.5rem; /* Adds spacing between items */
+    justify-content: center; /* Centers the items in the row */
+}
+
+.kit {
+    position: relative; 
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 1.5rem); 
+    max-width: 300px; 
+}
+
+    .kit img {
+        max-width: 100%;
+        height: auto;
+    }
+.view-product {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+    left: 15px;
+    color: #006d77;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+    .view-product:hover {
+
+       color: #004d5b;
+    }
+
+.arrow {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .kit {
+        flex: 1 1 calc(50% - 1.5rem); /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .kit {
+        flex: 1 1 100%; /* Single column on small screens */
+    }
+}
+
+
+    .kit h3 {
+        padding : 5px;
+        margin-top: 1rem;
+        color: #006d77;
+    }
+
+.kit p {
+    padding: 5px;
+    color: #555;
+}
+
+/* Repairs Section */
+
+.repairs {
+    background-image: url("phtoes/RepairsPhoto.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding: 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+}
+
+.container1 {
+    background: rgba(000, 000, 000, 0.3); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    color: #fff; /* White text for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container1 h2 {
+    margin-bottom: 10px;
+}
+
+.container1 p {
+    font-size: 1rem;
+}
+
+/* Energy Innovators Section */
+.energy-innovators {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+    .energy-innovators h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #023047;
+    }
+
+.innovators-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.innovator {
+    background-color: #edf6f9;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #3CAB90;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 1.5rem); /* 3 columns by default */
+    min-height: 250px;
+}
+    .innovator img {
+        max-width: 100%; /* Ensures it doesn't overflow */
+        height: auto; /* Keeps the aspect ratio */
+        object-fit: contain; /* Prevents distortion */
+    }
+
+
+    .innovator h3 {
+        margin-top: 1rem;
+        color: #006d77;
+    }
+
+/* Heading and supporting text */
+.heading-wrapper {
+    margin-top : 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 358.67px;
+    height: 337px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+    /* Heading */
+    .heading-wrapper h2 {
+        width: 358.67px;
+        height: 153px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 51px;
+        letter-spacing: -0.02em;
+        color: #101828;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    /* Supporting text */
+    .heading-wrapper p {
+        width: 358.67px;
+        height: 84px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #475467;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+
+/* Main section */
+.values-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+/* Container */
+.values-container {
+   
+    max-width: 1140px;
+    text-align: center;
+}
+
+    /* Title */
+    .values-container h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        color: #101828;
+        margin-bottom: 10px;
+    }
+
+    /* Subtitle */
+    .values-container p {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: #475467;
+        margin-bottom: 40px;
+    }
+
+/* Cards container - now in a row */
+.values-cards {
+  
+    display: flex;
+    gap: 32px;
+    justify-content: center; /* Centers the cards */
+    flex-wrap: nowrap; /* Keeps them in one row unless screen is small */
+}
+
+/* Responsive: Wrap cards if screen is too small */
+@media (max-width: 1200px) {
+    .values-cards {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+}
+
+    /* Card title */
+    .value-card h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #101828;
+        margin: 20px 0;
+    }
+
+    /* Card text */
+    .value-card p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        color: #475467;
+    }
+
+/* Icons */
+.icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(90deg, #3CAB90 0.01%, #0E6752 99.98%);
+    border-radius: 50%;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 2rem 0;
+    text-align: left;
+
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #023047;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 1rem auto;
+    max-width: 600px; /* Keeps it from being too wide */
+
+}
+.testimoniP {
+    font-size: 1.2rem; 
+    
+}
+
+.testimonialsPerson {
+    text-align: left;
+    display: flex;
+    align-items: center; /* Aligns image and text */
+    gap: 1rem; /* Space between image and text */
+    margin-top: 1rem;
+}
+
+    .testimonialsPerson img {
+        width: 60px; /* Adjust based on preference */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 50%; /* Makes the image circular */
+    }
+
+    .testimonialsPerson p, cite {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    color: #006d77;
+    font-style: normal; /* Avoids default italics */
+}
+
+
+/* General Reset */
+.footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #006d77;
+    color: #fff;
+    padding: 2rem 0;
+    font-family: 'Inter', sans-serif;
+}
+
+    .footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 30%;
+    }
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+        .footer-links a:hover {
+            color: #ffbb1c; /* Highlight color on hover */
+        }
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+    .social-media a {
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+        .social-media a:hover {
+            color: #ffbb1c; /* Highlight color on hover */
+        }
+
+.newsletter {
+    text-align: center;
+}
+
+    .newsletter p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+    .newsletter-form input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 250px;
+    }
+
+    .newsletter-form button {
+        padding: 10px 20px;
+        background-color: #ffbb1c;
+        border: none;
+        border-radius: 5px;
+        color: #2a3334;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .newsletter-form button:hover {
+            background-color: #e0a517; /* Darker shade on hover */
+        }
+
+.footer-bottom {
+    margin-left : 10%;
+    display : flex;
+    gap : 30%;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #475467;
+}
+
+    .footer-bottom p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .newsletter-form input {
+            width: 100%;
+        }
+}
